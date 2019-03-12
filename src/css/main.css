@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  letter-spacing: 1.25px;
+  text-align: center;
+  background-color: #424242;
+  color: white; }
+
+hr {
+  width: 50%;
+  margin: 1rem auto;
+  border: 0.5px solid rgba(255, 255, 255, 0.5); }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin: auto; }
+  form input,
+  form button {
+    margin: 0.25rem 0; }
+
+.app-container {
+  text-align: center; }
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.card {
+  position: relative;
+  height: 15rem;
+  width: 30rem;
+  margin: 2rem;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8); }
+  .card__type {
+    position: absolute;
+    top: 1rem;
+    left: 1rem; }
+  .card__text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%; }
+  .card .button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7); }
+    .card .button:hover {
+      background-color: black;
+      color: white; }
+  .card__edit {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem; }
+  .card__delete {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem; }
+  .card__flip {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+
+.edit-card-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 15rem;
+  width: 30rem;
+  margin: 2rem;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8); }
+  .edit-card-form input,
+  .edit-card-form button {
+    width: 15rem;
+    margin: 1rem 0; }
