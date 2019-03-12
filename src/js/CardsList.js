@@ -5,17 +5,18 @@ import { EditCardForm } from "./EditCardForm";
 const CardsList = ({ cards, setEditedTrue, deleteCard, updateCard, toggleFlipped }) => {
 
     const renderCards = (cards) => {
-        return cards.map((card) => (
+        return cards.map((card, index) => (
             (card.editing)?
                 <EditCardForm key={card.id} card={card} updateCard={updateCard} />
-            : <Card 
-                key={card.id} 
-                card={card} 
-                setEditedTrue={setEditedTrue}
-                deleteCard={deleteCard}
-                toggleFlipped={toggleFlipped}
-            />
-        )) ;
+            : 
+                <Card 
+                    key={index} 
+                    card={card} 
+                    setEditedTrue={setEditedTrue}
+                    deleteCard={deleteCard}
+                    toggleFlipped={toggleFlipped}
+                />
+        ));
     };
 
     return (

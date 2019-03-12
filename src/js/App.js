@@ -14,13 +14,12 @@ class App extends Component {
       {id: 4, question: "Why are deserts dry?", answer: "Places are deserts because they are dry.", editing: false, flipped: false},
 
       {id: 5, question: "Is Santa Clause real?", answer: "No. Just, no.", editing: false, flipped: false},
-    ]
+    ],
   };
 
   addCard = (card) => {
     card.editing = false;
     card.flipped = false;
-    card.id = this.state.cards.length * Math.random();
     const cards = [card, ...this.state.cards];
     this.setState({ cards })
   }
@@ -54,7 +53,6 @@ class App extends Component {
     });
     this.setState({ cards });
   }
-
 
   render() {
     return (

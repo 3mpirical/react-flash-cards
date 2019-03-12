@@ -8,8 +8,7 @@ class NewCardForm extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.addCard(this.state);
-        console.log("new event form submitted");
+        this.props.addCard({...this.state, id: Math.random() * 1000000000 });
     }
 
     handleChange = (event) => {
@@ -36,7 +35,6 @@ class NewCardForm extends React.Component {
                     onChange={this.handleChange}
                 />
                 <button type="submit" >Submit</button>
-
             </form>
         )
     }

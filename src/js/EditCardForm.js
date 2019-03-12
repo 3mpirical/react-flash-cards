@@ -12,7 +12,6 @@ class EditCardForm extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         this.props.updateCard(this.state);
-        console.log("edit event form submitted");
     }
 
     handleChange = (event) => {
@@ -39,7 +38,6 @@ class EditCardForm extends React.Component {
                     onChange={this.handleChange}
                 />
                 <button type="submit" >Submit</button>
-
             </form>
         )
     }
