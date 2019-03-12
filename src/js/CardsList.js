@@ -10,7 +10,7 @@ const CardsList = ({ cards, setEditedTrue, deleteCard, updateCard, toggleFlipped
                 <EditCardForm key={card.id} card={card} updateCard={updateCard} />
             : 
                 <Card 
-                    key={index} 
+                    key={card.id} 
                     card={card} 
                     setEditedTrue={setEditedTrue}
                     deleteCard={deleteCard}
