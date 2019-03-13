@@ -60,21 +60,30 @@ form {
     border-radius: 4px;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.7); }
-    .card .button:hover {
-      background-color: black;
-      color: white; }
   .card__edit {
     position: absolute;
     bottom: 1rem;
     left: 1rem; }
+    .card__edit:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: green;
+      border-color: green; }
   .card__delete {
     position: absolute;
     bottom: 1rem;
     right: 1rem; }
+    .card__delete:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: crimson;
+      border-color: crimson; }
   .card__flip {
     position: absolute;
     top: 1rem;
     right: 1rem; }
+    .card__flip:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: skyblue;
+      border-color: skyblue; }
 
 .edit-card-form {
   display: flex;
